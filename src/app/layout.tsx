@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body className={inter.className}><Navbar/>{children}</body>
+      <body className={inter.className}>
+        <div className="relative flex flex-col grow min-w-0 min-h-screen h-screen">
+          <Navbar />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 import {
   DropdownMenu,
@@ -19,7 +20,7 @@ const Navbar = () => {
             </Button>
           </div>
           <div className="shrink-0 w-auto md:mr-2 hidden md:block">
-            <a href="/projects/99513576-17c8-46c6-bb2c-700905a66886/timeline">
+            <Link href="/projects/99513576-17c8-46c6-bb2c-700905a66886/timeline">
               <svg
                 width="110"
                 height="24"
@@ -42,7 +43,7 @@ const Navbar = () => {
                   fill="#6366F1"
                 ></path>
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="relative flex w-full overflow-hidden md:hidden">Menu Here Fix</div>
         </div>
@@ -88,7 +89,7 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             {/* <span className="hidden items-center gap-x-1 text-sm font-medium leading-5 md:flex">
-              Edito Moncada
+              Edito Moncada Jr
             </span> */}
           </div>
         </div>
